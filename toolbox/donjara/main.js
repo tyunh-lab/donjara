@@ -124,6 +124,6 @@ muins3.addEventListener("click", () => {
   ClickMinusEvent(3);
 });
 dicebutton.addEventListener("click", () => {
-  dice0.innerText = getRandomInt();
+  dice0.innerHTML(getRandomInt());
 });
 console.log(getRandomInt());
