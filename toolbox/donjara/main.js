@@ -119,3 +119,10 @@ minus2.addEventListener("click", () => {
 minus3.addEventListener("click", () => {
   ClickMinusEvent(3);
 });
+
+const dice0 = document.querySelector("dice0"),
+  dice1 = document.querySelector("dice1");
+function getRandomInt() {
+  return Math.floor(Math.random() * 5 + 1);
+}
+console.log(getRandomInt());

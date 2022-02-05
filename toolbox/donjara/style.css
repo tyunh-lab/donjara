@@ -346,3 +346,12 @@ body.dark .home .text {
 .num {
   color: var(--text-color);
 }
+
+.dice {
+  padding-left: 100px;
+}
+
+#dice0,
+#dice1 {
+  color: var(--text-color);
+}
