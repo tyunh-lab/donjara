@@ -95,9 +95,10 @@ const plus0 = document.querySelector("#plus0"),
   muins1 = document.querySelector("#minus1"),
   muins2 = document.querySelector("#minus2"),
   muins3 = document.querySelector("#minus3"),
-  dicebutton = document.querySelector("dicebutton"),
-  dice0 = document.querySelector("dice0"),
-  dice1 = document.querySelector("dice1");
+  dicebutton = document.querySelector("#dicebutton"),
+  dice0 = document.querySelector("#dice0");
+var dicedate0 = 1,
+  dicedate1 = 1;
 
 plus0.addEventListener("click", () => {
   ClickPlusEvent(0);
@@ -124,6 +125,8 @@ muins3.addEventListener("click", () => {
   ClickMinusEvent(3);
 });
 dicebutton.addEventListener("click", () => {
-  dice0.innerHTML(getRandomInt());
+  dicedate0 = getRandomInt();
+  dicedate1 = getRandomInt();
+  dice0.innerHTML = dicedate0 + "+" + dicedate1 + "=" + (dicedate0 + dicedate1);
 });
 console.log(getRandomInt());

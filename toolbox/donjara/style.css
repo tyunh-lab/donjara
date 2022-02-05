@@ -348,10 +348,11 @@ body.dark .home .text {
 }
 
 .dice {
-  display: flex;
-  padding-left: 100px;
+  display: block;
+  padding-left: 70px;
 }
 #dicebutton {
+  display: block;
   width: 200px;
   height: auto;
   text-align: center;
@@ -360,7 +361,6 @@ body.dark .home .text {
   color: var(--text-color);
   border-radius: 3px;
 }
-#dice0,
-#dice1 {
+#dice0 {
   color: var(--text-color);
 }
