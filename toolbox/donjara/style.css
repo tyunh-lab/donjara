@@ -325,18 +325,11 @@ body.dark .home .text {
   cursor: pointer;
   user-select: none;
 }
-.wrapper span.num {
-  font-size: 50px;
-  border-right: 2px solid rgba(0, 0, 0, 0.2);
-  border-left: 2px solid rgba(0, 0, 0, 0.2);
-  pointer-events: none;
-}
 .wrapper {
   margin: 50px 800px 30px 60px;
   background-color: var(--sidebar-color);
   color: var(--text-color);
 }
-
 .count_button {
   text-decoration: none;
   -moz-appearance: none;
@@ -345,10 +338,11 @@ body.dark .home .text {
   margin: 1em 0;
   padding: 0.6em 1em;
   font-size: 1em;
-  background-color: var(--sidebar-color);
-  color: var(--text-color);
   cursor: pointer;
   border-radius: 3px;
   border: 0;
   transition: 0.3s;
+}
+.num {
+  color: var(--text-color);
 }
