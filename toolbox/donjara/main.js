@@ -4,7 +4,9 @@ const body = document.querySelector("body"),
   searchBtn = body.querySelector(".search-box"),
   modeSwitch = body.querySelector(".toggle-switch"),
   modeText = body.querySelector(".mode-text");
-
+function getRandomInt() {
+  return Math.floor(Math.random() * 5 + 1);
+}
 toggle.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
@@ -85,14 +87,17 @@ function ClickMinusEvent(i) {
   }
 }
 
-plus0 = document.querySelector("#plus0");
-plus1 = document.querySelector("#plus1");
-plus2 = document.querySelector("#plus2");
-plus3 = document.querySelector("#plus3");
-muins0 = document.querySelector("#minus0");
-muins1 = document.querySelector("#minus1");
-muins2 = document.querySelector("#minus2");
-muins3 = document.querySelector("#minus3");
+const plus0 = document.querySelector("#plus0"),
+  plus1 = document.querySelector("#plus1"),
+  plus2 = document.querySelector("#plus2"),
+  plus3 = document.querySelector("#plus3"),
+  muins0 = document.querySelector("#minus0"),
+  muins1 = document.querySelector("#minus1"),
+  muins2 = document.querySelector("#minus2"),
+  muins3 = document.querySelector("#minus3"),
+  dicebutton = document.querySelector("dicebutton"),
+  dice0 = document.querySelector("dice0"),
+  dice1 = document.querySelector("dice1");
 
 plus0.addEventListener("click", () => {
   ClickPlusEvent(0);
@@ -106,23 +111,19 @@ plus2.addEventListener("click", () => {
 plus3.addEventListener("click", () => {
   ClickPlusEvent(3);
 });
-
-minus0.addEventListener("click", () => {
+muins0.addEventListener("click", () => {
   ClickMinusEvent(0);
 });
-minus1.addEventListener("click", () => {
+muins1.addEventListener("click", () => {
   ClickMinusEvent(1);
 });
-minus2.addEventListener("click", () => {
+muins2.addEventListener("click", () => {
   ClickMinusEvent(2);
 });
-minus3.addEventListener("click", () => {
+muins3.addEventListener("click", () => {
   ClickMinusEvent(3);
 });
-
-const dice0 = document.querySelector("dice0"),
-  dice1 = document.querySelector("dice1");
-function getRandomInt() {
-  return Math.floor(Math.random() * 5 + 1);
-}
+dicebutton.addEventListener("click", () => {
+  dice0.innerText = getRandomInt();
+});
 console.log(getRandomInt());
